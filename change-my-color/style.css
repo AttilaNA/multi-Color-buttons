@@ -4,3 +4,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+button#change-color.red {
+    background-color: red;
+}
