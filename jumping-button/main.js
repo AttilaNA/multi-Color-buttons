@@ -1,13 +1,17 @@
 
-window.addEventListener("load", function (){
+window.addEventListener("load", init)
+
+function init(){
     let button = document.getElementById("flip-flop");
-    button.addEventListener("click", function (){
-        if(button.classList.value === ""){
-            button.classList.add("right");
-            button.textContent = "Go Left!";
-        } else {
-            button.classList.remove("right");
-            button.textContent = "Go Right!";
-        }
-    })
-})
+    button.addEventListener("click", flipFlop);
+}
+
+function flipFlop(event){
+    if(event.target.classList.value === ""){
+        event.target.classList.add("right");
+        event.target.textContent = "Go Left!";
+    } else {
+        event.target.classList.remove("right");
+        event.target.textContent = "Go Right!";
+    }
+}
