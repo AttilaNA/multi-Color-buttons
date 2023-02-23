@@ -2,7 +2,7 @@
 window.addEventListener("load", init)
 
 function init(){
-    let button = document.getElementById("flip-flop");
+    const button = document.getElementById("flip-flop");
     button.addEventListener("click", flipFlop);
 }
 

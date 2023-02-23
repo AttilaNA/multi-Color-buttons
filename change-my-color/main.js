@@ -2,7 +2,7 @@
 window.addEventListener("load", init);
 
 function init(){
-    let button = document.getElementById("change-color");
+    const button = document.getElementById("change-color");
     button.addEventListener("click", changeColor);
 }
 
